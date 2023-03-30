@@ -1,0 +1,247 @@
+* {
+   padding: 0;
+   margin: 0;
+}
+html {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #121212;
+}
+.barra-lateral {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 196px;
+    background-color: #000000;
+    padding: 24px;
+}
+.barra-lateral .logo img {
+    width: 130px;
+}
+.barra-lateral .navegacao ul {
+    list-style: none;
+    margin-top: 20px;
+}
+.barra-lateral .navegacao ul li {
+    padding: 10px 0px;
+}
+.barra-lateral .navegacao ul li a {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.barra-lateral .navegacao ul li a:hover {
+    color: #ffffff;
+}
+.barra-lateral .navegacao ul li a:active {
+    color: #ffffff;
+}
+.barra-lateral .navegacao ul li a:focus {
+    color: #ffffff;
+}
+.barra-lateral .navegacao ul li .fa {
+    font-size: 20px;
+    margin-right: 10px;
+}
+.barra-lateral .politicas {
+    position: absolute;
+    bottom: 170px;
+}
+.barra-lateral .politicas ul {
+    list-style: none;
+}
+.barra-lateral .politicas ul li {
+    padding-bottom: 5px;
+}
+.barra-lateral .politicas ul li a {
+    color: #b3b3b3;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 10px;
+}
+.barra-lateral .linguagem {
+    position: absolute;
+    bottom: 120px;
+    padding-left: 15px;
+}
+.barra-lateral .linguagem a {
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 15px;
+    border: #b3b3b3 solid;
+    padding: 4px 8px;
+    font-size: 14px;
+    background-color: transparent;
+    border-width: 1px;
+    font-weight: bold;
+    
+}
+.barra-lateral .linguagem a:hover {
+    font-size: 14px;
+}
+.container-main {
+    margin-left: 245px;
+    margin-bottom: 100px;
+}
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    background-color: #101010;
+    padding: 14px 30px;
+    
+}
+.cabecalho .prev-next-buttons button{
+    color: #7a7a7a;
+    cursor: not-allowed;
+    width: 34px;
+    height: 34px;
+    border-radius: 100%;
+    font-size: 18px;
+    border: 0px;
+    background-color:#090909;
+    margin-right: 10px;
+}
+.cabecalho .navegacao {
+    display: flex;
+    align-items: center;
+}
+.cabecalho .navegacao ul {
+    list-style: none;
+}
+.cabecalho .navegacao ul li {
+    display: inline-block;
+    margin: 0 8px;
+    width: 70px;
+}
+.cabecalho .navegacao ul li a {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+.cabecalho .navegacao ul li a:hover {
+    color: #ffffff;
+    font-size: 14px;
+}
+.cabecalho .navegacao ul li.divisor {
+    color: #ffffff;
+    font-size: 26px;
+    margin: 0px 0px;
+    width: auto;
+    padding-left: 20px;
+}
+.cabecalho .navegacao button {
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    padding: 14px 30px;
+    border: 0;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 15px;
+}
+.cabecalho .navegacao button:hover {
+    background-color: #f2f2f2;
+}
+.playlist-spotify {
+    padding: 20px 40px;
+
+}
+.playlist-spotify h2 {
+    color: #ffffff;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.playlist-spotify .list {
+    display:flex;
+    gap: 20px;
+    overflow: hidden;
+}
+.playlist-spotify .list .item {
+    min-width: 140px;
+    width: 160px;
+    padding: 15px;
+    background-color: #181818;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all ease 0.4s;
+}
+.playlist-spotify .list .item:hover {
+    background-color: #252525;
+}
+.playlist-spotify .list .item img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+.playlist-spotify .list .item .play {
+    position: relative;
+}
+.playlist-spotify .list .item .play .fa {
+    position: absolute;
+    right: 10px;
+    top: -60px;
+    padding: 18px;
+    background-color: #1db954;
+    border-radius: 100%;
+    opacity: 0;
+    transition: all ease 0.4s;
+}
+.playlist-spotify .list .item:hover .play .fa {
+    opacity: 1;
+    transform: translateY(-20px);
+}
+.playlist-spotify .list .item h4 {
+    color: #ffffff;
+    font-size: 14px;
+    margin-bottom:10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.playlist-spotify .list .item p {
+    color: #989898;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 600;
+}
+.preview {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, #ae2896, #509bf5);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.preview h6 {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.preview p {
+    color:#ffffff;
+    font-size: 14px;
+    font-weight: 500;
+}
+.preview button {
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px 30px;
+    border: 0px;
+    border-radius: 40px;
+    cursor: pointer;
+}
